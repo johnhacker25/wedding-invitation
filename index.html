@@ -68,11 +68,21 @@
           <span class="hero__title-line hero__title-line--script" data-i18n="hero.line3">taklif etilgansiz</span>
         </h1>
 
-        <!-- Signature element: wax-seal medallion with portrait monogram -->
-        <div class="seal" aria-hidden="true">
-          <svg viewBox="0 0 220 220" class="seal__rays"><use href="#seal-rays"/></svg>
-          <div class="seal__center">
-            <span class="seal__monogram">J<span class="seal__amp">&amp;</span>M</span>
+        <!-- Photo placeholder: oval portrait frame wrapped in floral wreath (replace inner div background with your photo) -->
+        <div class="portrait" aria-hidden="true">
+          <svg class="portrait__wreath" viewBox="0 0 320 320"><use href="#wreath"/></svg>
+          <div class="portrait__photo" id="heroPhoto">
+            <span class="portrait__placeholder">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-8.5C.8 9.2 2.6 6 6 6c2 0 3.6 1.1 4.3 2.7C11 7.1 12.6 6 14.6 6c3.4 0 5.2 3.2 3.5 6.5C16.6 16.65 12 21 12 21Z" fill="currentColor"/></svg>
+              <em>Kelin-kuyov surati</em>
+            </span>
+          </div>
+          <!-- Wax seal monogram badge -->
+          <div class="seal seal--badge">
+            <svg viewBox="0 0 220 220" class="seal__rays"><use href="#seal-rays"/></svg>
+            <div class="seal__center">
+              <span class="seal__monogram">J<span class="seal__amp">&amp;</span>M</span>
+            </div>
           </div>
         </div>
 
@@ -413,6 +423,37 @@
         <circle cx="37" cy="108" r="4" fill="currentColor" opacity="0.4"/>
         <circle cx="66" cy="148" r="4" fill="currentColor" opacity="0.4"/>
         <circle cx="38" cy="188" r="4" fill="currentColor" opacity="0.4"/>
+      </g>
+
+      <!-- Circular floral wreath surrounding the hero portrait -->
+      <g id="wreath">
+        <!-- Base ring -->
+        <circle cx="160" cy="160" r="146" fill="none" stroke="currentColor" stroke-width="1" opacity="0.25"/>
+        <!-- Rose blossoms scattered around the ring -->
+        <g id="rose-top" transform="translate(160 14)">
+          <circle r="13" fill="currentColor" opacity="0.22"/>
+          <circle r="7" fill="currentColor" opacity="0.4"/>
+          <circle cx="-16" cy="10" r="8" fill="currentColor" opacity="0.18"/>
+          <circle cx="16" cy="10" r="8" fill="currentColor" opacity="0.18"/>
+        </g>
+        <use href="#rose-top" transform="rotate(48 160 160)"/>
+        <use href="#rose-top" transform="rotate(96 160 160)"/>
+        <use href="#rose-top" transform="rotate(144 160 160)"/>
+        <use href="#rose-top" transform="rotate(192 160 160)"/>
+        <use href="#rose-top" transform="rotate(240 160 160)"/>
+        <use href="#rose-top" transform="rotate(288 160 160)"/>
+        <use href="#rose-top" transform="rotate(336 160 160)"/>
+        <!-- Leaf sprigs connecting blossoms -->
+        <g fill="none" stroke="currentColor" stroke-width="1" opacity="0.3">
+          <path d="M160 30c20 14 34 34 40 60"/>
+          <path d="M160 30c-20 14-34 34-40 60"/>
+          <path d="M290 160c-14 20-34 34-60 40"/>
+          <path d="M290 160c-14-20-34-34-60-40"/>
+          <path d="M160 290c20-14 34-34 40-60"/>
+          <path d="M160 290c-20-14-34-34-40-60"/>
+          <path d="M30 160c14 20 34 34 60 40"/>
+          <path d="M30 160c14-20 34-34 60-40"/>
+        </g>
       </g>
     </defs>
   </svg>
