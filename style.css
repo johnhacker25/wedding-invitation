@@ -1004,12 +1004,12 @@ button {
 .masonry__item--tall { grid-row: span 2; }
 
 /* Generative "photo" gradients themed in champagne/gold tones */
-.masonry__item[style*="--tile: 1"] { background: linear-gradient(135deg, #E9DECB, #D9B978); }
-.masonry__item[style*="--tile: 2"] { background: linear-gradient(135deg, #F3E9D6, #C9A86A); }
-.masonry__item[style*="--tile: 3"] { background: linear-gradient(135deg, #EFE3CE, #B6862C); }
-.masonry__item[style*="--tile: 4"] { background: linear-gradient(135deg, #E3D5BC, #C7A765); }
-.masonry__item[style*="--tile: 5"] { background: linear-gradient(135deg, #F6EEDD, #D6BD8C); }
-.masonry__item[style*="--tile: 6"] { background: linear-gradient(135deg, #EADFC8, #BE9A55); }
+.masonry__item[style*="--tile: 1"] { background: url('assets/images/photo_2026-06-27_00-04-27.jpg') center/cover; }
+.masonry__item[style*="--tile: 2"] { background: url('assets/images/photo_2026-06-27_00-04-53.jpg') center/cover; }
+.masonry__item[style*="--tile: 3"] { background: url('assets/images/photo_2026-06-27_00-05-16.jpg') center/cover; }
+.masonry__item[style*="--tile: 4"] { background: url('assets/images/photo_2026-06-27_00-05-54.jpg') center/cover; }
+.masonry__item[style*="--tile: 5"] { background: url('assets/images/photo_2026-06-27_00-04-27.jpg') center/cover; }
+.masonry__item[style*="--tile: 6"] { background: url('assets/images/photo_2026-06-27_00-04-53.jpg') center/cover; }
 
 .masonry__item:hover { transform: translateY(-4px) scale(1.015); box-shadow: 0 22px 50px -18px rgba(138,100,32,0.32); }
 
